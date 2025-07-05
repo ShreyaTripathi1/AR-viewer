@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walmart Product AR View</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js@2.2.2/aframe/build/aframe-ar.min.js"></script>
+</head>
+<body>
+  <h1>Select a Product to View in AR</h1>
+  <div class="product-selection">
+    <div class="product-option">
+      <img src="/assets/Img1.jpg" alt="Product 1" onclick="selectModel('/assets/model1.glb')">
+      <p>Chair 1</p>
+    </div>
+    <div class="product-option">
+      <img src="/assets/Img2.jpg" alt="Product 2" onclick="selectModel('/assets/model2.glb')">
+      <p>Chair 2</p>
+    </div>
+  </div>
+  <button id="arButton" disabled>View in AR</button>
+  <div id="arContainer" style="display: none;">
+    <button id="closeButton">✖</button>
+    <!-- AR scene will be inserted here dynamically -->
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
