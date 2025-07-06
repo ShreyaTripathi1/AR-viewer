@@ -15,11 +15,9 @@ Place images and 3D models in public/assets/.
 Open VS Code, open the E:\Walmart folder.
 In the terminal, run:npm install
 
-
-Start the server:npm start
+Start the server-npm start
 
 ## Execution
 
-Open http://localhost:3000 in a browser.
 Click a chair image, then click "View in AR".
 Allow camera access to see the model in AR.
